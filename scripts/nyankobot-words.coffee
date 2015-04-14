@@ -6,7 +6,8 @@
 #
 module.exports = (robot) ->
   robot.hear /(にゃんこ)|(ニャンコ)/, (msg) ->
-    msg.send "私は#{msg.message}ではない！"
+    item = msg.match[1]
+    msg.send "私は#{item}ではない！"
 
   robot.hear /(いい話)|(良い話)|(いいはなし)|(良いはなし)/, (msg) ->
     key = "e-talk"
