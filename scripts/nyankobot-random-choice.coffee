@@ -14,4 +14,4 @@ module.exports = (robot) ->
   robot.respond /選んで (.*)/, (msg) ->
     items = msg.match[1].split(/\s/)
     item = msg.random items
-    msg.reply "#{item} を選んでやったぞ"
+    msg.send "#{item} を選んでやったぞ"
