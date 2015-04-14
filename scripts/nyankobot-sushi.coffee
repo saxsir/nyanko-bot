@@ -11,5 +11,5 @@
 #   saxsir <saxsir.256@gmail.com>
 
 module.exports = (robot) ->
-  robot.respond /寿司/, (msg) ->
+  robot.respond /マグロ/, (msg) ->
     msg.reply "あいよ っ :sushi:"
