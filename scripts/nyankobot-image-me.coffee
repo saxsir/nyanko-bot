@@ -8,7 +8,7 @@
 #   hubot-google-images
 
 module.exports = (robot) ->
-  robot.hear /^(jpi)? (.*)/i, (msg) ->
+  robot.hear /^(jpi) (.*)/i, (msg) ->
     imageMe msg, msg.match[2], (url) ->
       msg.send url
 
